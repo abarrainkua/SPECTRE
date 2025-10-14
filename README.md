@@ -1,6 +1,7 @@
 # SPECTRE
 
-This repository contains the code to run SPECTRE, a framework to enhance minimax fairness guarantees without explicit access to demographic information. 
+This repository contains the code to run SPECTRE (SPECTral uncertainty set for Robust Estimation), a framework to enhance minimax fairness guarantees without 
+explicit access to demographic information. 
 
 This approach builds upon the structure of the [Minimax Risk Classifier](http://www.jmlr.org/papers/v24/22-0339.html), extending it with additional specifications 
 designed to promote fairness guarantees without requiring demographic information. Specifically, we map the original data into the frequency domain using a simple 
