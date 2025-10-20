@@ -3,12 +3,12 @@
 This repository contains the code to run SPECTRE (SPECTral uncertainty set for Robust Estimation), a framework to enhance minimax fairness guarantees without 
 explicit access to demographic information. 
 
-This approach builds upon the structure of the [Minimax Risk Classifier](http://www.jmlr.org/papers/v24/22-0339.html), extending it with additional specifications 
-designed to promote fairness guarantees without requiring demographic information. Specifically, we map the original data into the frequency domain using a simple 
-Fourier feature mapping, adjust the spectral components to encourage minimax fairness, and constrain the divergence between the worst-case and empirical distributions 
-to prevent excessive pessimism and undue sensitivity to outliers.
+SPECTRE is rooted in the mapping of the data using a set of random Fourier basis functions and modifying the spectrum to retain only the essential response
+frequencies. Additionaly, it constraints, in the frequency domain, the extent to which the worst-case distributions can deviate from the empirical distribution.
+Specifically, SPECTRE uses and adjusts the uncertainty set of a [Minimax Risk Classifier](http://www.jmlr.org/papers/v24/22-0339.html), in the response 
+frequency domain with the goal of attaining optimal fairness guarantees, measured by worst-group accuracy.
 
-The implementation of the MRC is based on its original code. 
+The implementation of the MRC is based on its [original code](https://github.com/MachineLearningBCAM/MRCpy). 
 
 Currently, the available code supports the following datasets:
 - American Community Survey datasets  (through the `folktables` package in python)
