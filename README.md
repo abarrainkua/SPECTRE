@@ -15,4 +15,4 @@ Currently, the available code supports the following datasets:
 - COMPAS
 - Toy dataset
 
-However, the implementation of new datasets is straightforward.
+However, new datasets can easily be integrated into the code :)
